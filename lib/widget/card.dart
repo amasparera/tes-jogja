@@ -59,7 +59,7 @@ class CardHome extends StatelessWidget {
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
-              if (!home)
+              if (home == false)
                 SizedBox(
                   width: double.infinity,
                   child: Text(
