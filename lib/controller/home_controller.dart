@@ -10,7 +10,7 @@ class HomeController extends ChangeNotifier {
 
   Future getapi() async {
     loading = true;
-    await RemoteApi().getApi().then((value) {
+    await RemoteApiService().getApi().then((value) {
       return data = value;
     });
     loading = false;

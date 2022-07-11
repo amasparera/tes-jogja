@@ -4,7 +4,7 @@ import 'dart:developer';
 import 'package:http/http.dart' as http;
 import 'package:uites/models/new_model.dart';
 
-class RemoteApi {
+class RemoteApiService {
   Future<List<NewsModel>> getApi() async {
     const idKey = "3b2b8aee4cfc469c9109693b91298921";
     final Uri apiUrl = Uri.parse(

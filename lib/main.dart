@@ -6,11 +6,12 @@ import 'package:uites/controller/home_controller.dart';
 import 'package:uites/page/home_page.dart';
 
 void main() {
-  const SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(
+             const SystemUiOverlayStyle(
                 statusBarColor: Colors.transparent,
                 statusBarIconBrightness: Brightness.dark,
                 systemNavigationBarColor: Colors.transparent,
-                systemNavigationBarIconBrightness: Brightness.dark);
+                systemNavigationBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
