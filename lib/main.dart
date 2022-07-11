@@ -6,12 +6,11 @@ import 'package:uites/controller/home_controller.dart';
 import 'package:uites/page/home_page.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-             const SystemUiOverlayStyle(
-                statusBarColor: Colors.transparent,
-                statusBarIconBrightness: Brightness.dark,
-                systemNavigationBarColor: Colors.transparent,
-                systemNavigationBarIconBrightness: Brightness.dark));
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
@@ -27,8 +26,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter UiTes',
         debugShowCheckedModeBanner: false,
-
-        theme: ThemeData(scaffoldBackgroundColor: Colors.white,
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
           appBarTheme: const AppBarTheme(
             systemOverlayStyle: SystemUiOverlayStyle(
                 statusBarColor: Colors.transparent,
